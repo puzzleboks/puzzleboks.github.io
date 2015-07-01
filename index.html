@@ -1,1 +1,79 @@
-Hello World
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link href="/normalize.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Coustard:900|Raleway:100' rel='stylesheet' type='text/css'>
+	<title>About Me</title>
+	<style type="text/css">
+		body {
+			background-color: black;
+			color: white;
+			font-family: 'Raleway', sans-serif;
+			background-image: url("img/Me_Puz3_blackBkgd1b.jpg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;
+			background-position: left bottom;
+		}
+		div {
+			max-width: 600px;
+			margin: 20px 0 0 20px;
+		}
+		h1 {
+			font-size: 54px;
+			font-family: 'Coustard', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			word-spacing: 8px;
+			margin: 0;
+		}
+		h2 {
+			font-size: 28px;
+			color: #6A5ACD;
+			letter-spacing: 2px;
+			margin-top: -15px;
+		}
+		p {
+			font-size: 20px;
+			max-width: 425px;
+			line-height: 25px;
+			margin-top: 20px;
+		}
+		@media (max-width: 568px) {
+		/*@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {*/
+			div {
+				width: 300px;
+				text-align: center;
+				margin: 20px auto;
+			}
+      		h1 {
+				margin-bottom: 0px;
+        		font-size: 31px;
+        		
+      		}
+      		h2 {
+      			font-size: 18px;
+      			letter-spacing: 1px;
+				margin-top: -4px;
+      		}
+      		p {
+      			font-size: 16px;
+      			line-height: 20px;
+      		}
+    	}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Lon Phelps</h1>
+		<h2>Freelance Multimedia Designer</h2>
+		<p>I am a freelance multimedia designer living in Reston, VA. My goal is to get a job as a junior web developer at the conclusion of this immersive course. This is me and my dog Puzzle taking a nap.</p>
+		<p>puzzleboks@gmail.com<br />703-310-8824</p>
+		<button onclick="mySpaniel()">Like</button>
+	</div>
+	<script type="text/javascript">
+		function mySpaniel() {
+    		alert("Springers Rule!");
+		}
+	</script>
+</body>
